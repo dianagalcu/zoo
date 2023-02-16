@@ -2,16 +2,26 @@ package org.example;
 
 public class Familia {
 
-    Animal papa="Dinosaurin";
-    Animal mama="Tiburosin";
-    Animal hijo;
+    public Animal papa;
+    public Animal mama;
+    public Animal hijo;
+
+    public Familia() {
+    }
+
 
     public Familia(Animal papa, Animal mama) {
         this.papa = papa;
         this.mama = mama;
     }
 
-    public  imprimirFamilia(){
+    public Familia(Animal papa, Animal mama, Animal hijo) {
+        this.papa = papa;
+        this.mama = mama;
+        this.hijo = hijo;
+    }
+
+    public void imprimirFamilia(){
 
         //Este metodo muestra los nombres de los integrantes de la familia
         System.out.println(
@@ -24,7 +34,7 @@ public class Familia {
 
     public void tenerHijo(String nombre){
 
-        if(this.papa.pareja!=null){
+        if(this.mama.pareja!=null){
 
             Animal hijo= new Animal();
             hijo.nombre=nombre;
