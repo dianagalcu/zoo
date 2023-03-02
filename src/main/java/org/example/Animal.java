@@ -2,10 +2,10 @@ package org.example;
 
 public class Animal {
 
-    public String nombre;
-    public String genero;
-    public double peso;
-    public String pareja;
+    private String nombre;
+    private String genero;
+    private double peso;
+    private String pareja;
 
     public Animal() {
     }
