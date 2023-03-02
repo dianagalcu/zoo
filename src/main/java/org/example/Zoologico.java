@@ -4,7 +4,7 @@ public class Zoologico {
     public static void main(String[] args) {
 
 
-        Animal animal1 = new Animal()
+        Animal animal1 = new Animal();
         animal1.nombre="Cebra";
         animal1.genero="F";
 
