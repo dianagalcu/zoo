@@ -5,13 +5,13 @@ public class Zoologico {
 
 
         Animal animal1 = new Animal();
-        animal1.nombre="Cebra";
-        animal1.genero="F";
+        animal1.setNombre"(Cebra");
+        animal1.setGenero("F");
 
 
         Animal animal2 = new Animal();
-        animal2.nombre="Caballo";
-        animal2.genero="M";
+        animal2.setNombre("Caballo");
+        animal2.setGenero("M");
 
 
         animal1.encontrarPareja(animal2);
@@ -24,9 +24,6 @@ public class Zoologico {
 
 
         familia.imprimirFamilia();
-
-
-
 
     }
 }
