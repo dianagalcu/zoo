@@ -2,9 +2,9 @@ package org.example;
 
 public class Familia {
 
-    public Animal papa;
-    public Animal mama;
-    public Animal hijo;
+    private Animal papa;
+    private Animal mama;
+    private Animal hijo;
 
     public Familia() {
     }
@@ -34,16 +34,16 @@ public class Familia {
 
     public void tenerHijo(String nombre){
 
-        if(this.mama.pareja!=null){
+        if(this.mama.getPareja()!=null){
 
             Animal hijo= new Animal();
-            hijo.nombre=nombre;
-            hijo.peso=1;
+            hijo.setNombre(nombre);
+            hijo.setPeso(1);
             double random = Math.random();
             if(random<0.5){
-                hijo.genero="F";
+                hijo.setGenero"(F");
             }else{
-                hijo.genero="M";
+                hijo.setGenero("M");
             }
             this.hijo=hijo;
 
@@ -51,10 +51,6 @@ public class Familia {
             System.out.println("Aun no puedes tener hijos");
         }
 
-
     }
-
-
-
 
 }
